@@ -254,6 +254,7 @@ workspace $tag5 output LVDS1
 # finds out, if available)
 bar {
   	font pango:Source Sans Pro-10 11
+    workspace_buttons yes
 	status_command i3blocks -c ~/.i3/i3blocks.conf
     position top 
   colors {
