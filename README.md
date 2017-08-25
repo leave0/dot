@@ -45,12 +45,12 @@ pacstrap /mnt base base-devel
 6、 hwclock --systohc --utc
 
 7、双系统
-   （1）pacman -S grub-bios　　
-   （2）grub-install --recheck  /dev/sda　　
-   （3）pacman -S os-prober ：检测其他操作系统，这里是win7　　
-   （4）grub-mkconfig -o /boot/grub/grub.cfg
+  （1）pacman -S grub-bios　　
+  （2）grub-install --recheck  /dev/sda　　
+  （3）pacman -S os-prober ：检测其他操作系统，这里是win7　　
+  （4）grub-mkconfig -o /boot/grub/grub.cfg
    
-    单系统      
+ 单系统      
    pacman -S grub-bios   
    grub-install /dev/sda
    grub-mkconfig -o /boot/grub/grub.cfg
