@@ -2,13 +2,19 @@
 一、分区及安装基本系统
 Cfdisk  
 mkfs.ext4 /dev/sda9    boot    100m
+
 mkfs.ext4 /dev/sda10   /
+
 mkfs.ext4 /dev/sda11   home   
+
 mkswap /dev/sda12    
+
 swapon /dev/sda12    
 
 mount /dev/sda10 /mnt    
+
 mkdir /mnt/boot && mount /dev/sda9 /mnt/boot
+
 mkdir /mnt/home && mount /dev/sda11 /mnt/home   
 
 vi /etc/pacman.d/mirrorlist
