@@ -6,49 +6,49 @@ mkfs.ext4 /dev/sda10   /
 mkfs.ext4 /dev/sda11   home   
 mkswap /dev/sda12    
 swapon /dev/sda12    
-==========================================================
+
 mount /dev/sda10 /mnt    
 mkdir /mnt/boot && mount /dev/sda9 /mnt/boot
 mkdir /mnt/home && mount /dev/sda11 /mnt/home   
-==========================================================
+
 vi /etc/pacman.d/mirrorlist
-==========================================================
+
 dhcpcd   
-==========================================================
+
 pacstrap /mnt base base-devel
 也可以pacstrap /mnt bash coreutils file filesystem grub2 linux pacman procps-ng syslog-ng glibc systemd-sysvcompat shawd dhcpcd vi
-===========================================================
+
 13  genfstab -p /mnt >>/mnt/etc/fstab
-===========================================================
+
 14  arch-chroot /mnt
-===========================================================
+
 二、对新的基本系统进行设置
 1  vi /etc/hostname
      echo aaa >/etc/hostname  
-============================================================
+
 2  vi /etc/timezone
      写入时区：Asia/Shanghai    ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
-============================================================
+
 3  vi /etc/locale.conf
         LANG=en_US.UTF-8
-============================================================
+
 4、vi /etc/locale.gen
-===============================================================
+
 5、locale-gen
-===============================================================
+
 6、 hwclock --systohc --utc
- ===============================================================
+
 7、双系统
    （1）pacman -S grub-bios　　
    （2）grub-install --recheck  /dev/sda　　
    （3）pacman -S os-prober ：检测其他操作系统，这里是win7　　
    （4）grub-mkconfig -o /boot/grub/grub.cfg
-    ======================================================
+   
     单系统      
    pacman -S grub-bios   
    grub-install /dev/sda
    grub-mkconfig -o /boot/grub/grub.cfg
-===
+
 8、 mkinitcpio -p linux
 
 9、  passwd
