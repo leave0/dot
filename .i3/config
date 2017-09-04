@@ -56,7 +56,8 @@ gaps outer $default_gaps_outer
 #bindsym $mod+d exec dmenu_run
 #bindsym $mod+d exec --no-startup-id dmenu_run -b  -fn 'Dejavu Sans Mono:10' -nb '#111111' -nf '#00AFDA' -sb '#111111' -sf '#E7E8E9'
 #bindsym $mod+d exec --no-startup-id rofi -show run -font "Monospace Bold 18" -m -1 -fullscreen -padding 300 -hide-scrollbar
-bindsym $mod+d exec rofi -show run -hide-scrollbar -width 1440 -lines 4 -font "Monospace Bold 20" -padding 400 
+#bindsym $mod+d exec rofi -show run -hide-scrollbar -width 1440 -lines 4 -font "Monospace Bold 20" -padding 400 
+bindsym $mod+d exec rofi -show run 
 
 #bindsym $mod+d exec --no-startup-id rofi -show run -lines 3 -bw 1 -font "Monospace Bod 18" -opacity "100" 
 # There also is the (new) i3-dmenu-desktop which only displays applications
