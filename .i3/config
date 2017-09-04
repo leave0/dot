@@ -48,6 +48,10 @@ bindsym $mod+Return exec termite
 # kill focused window
 bindsym $mod+Shift+q kill
 
+set $default_gaps_inner 2
+set $default_gaps_outer 4
+gaps inner $default_gaps_inner
+gaps outer $default_gaps_outer
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run
 #bindsym $mod+d exec --no-startup-id dmenu_run -b  -fn 'Dejavu Sans Mono:10' -nb '#111111' -nf '#00AFDA' -sb '#111111' -sf '#E7E8E9'
@@ -323,6 +327,7 @@ exec --no-startup-id volumeicon&
 exec --no-startup-id nm-applet
 #Autostart
 exec --no-startup-id termite
+exec --no-startup-id compton
 
 # Custom KeyBinds
 bindsym Control+mod1+l exec sh ~/.i3/i3lock.sh
