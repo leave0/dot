@@ -77,7 +77,7 @@
 
 14、pacman -Syu
 
-15、pacman -S  xorg-server xorg-xinit lightdm i3 lxterminal wqy-zenhei xf86-video-intel   mesa   gvfs gvfs-afc  vim git zsh alsamixer volumeicon xorg-xrandr
+15、pacman -S  xorg-server xorg-xinit lightdm i3 lxterminal wqy-zenhei xf86-video-intel   mesa   gvfs gvfs-mtp  vim git zsh alsamixer volumeicon xorg-xrandr
 
 16、  useradd -m 新用户
       passwd 新用户
@@ -86,3 +86,4 @@
 17、 一些必备的软件 firefox firefox-i18n-zh-cn flashplugin pcmanfm pulseaudio-alsa gpicview wqy-microhei ttf-arphic-ukai ttf-arphic-uming file-roller unrar zip unzip p7zip  feh lxappearance  ntfs-3g fcitx termite  yaourt
 
 18、  ttf-font-awesome ttf-font-icons (i3-gaps 状态栏显示图标）
+19、　la-capitaine-icon-theme arc-gtk-theme
