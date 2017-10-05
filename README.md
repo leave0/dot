@@ -86,4 +86,5 @@
 17、 一些必备的软件 firefox firefox-i18n-zh-cn flashplugin pcmanfm pulseaudio-alsa gpicview wqy-microhei ttf-arphic-ukai ttf-arphic-uming file-roller unrar zip unzip p7zip  feh lxappearance  ntfs-3g fcitx termite  yaourt
 
 18、  ttf-font-awesome ttf-font-icons (i3-gaps 状态栏显示图标）
+
 19、　la-capitaine-icon-theme arc-gtk-theme
