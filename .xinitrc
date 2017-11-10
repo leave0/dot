@@ -20,10 +20,11 @@ fi
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
+export MPD_HOST=$HOME/.config/mpd/socket
 # exec gnome-session
 # exec startkde
 # exec startxfce4
 # ...or the Window Manager of your choice
 #exec openbox-session 
-#exec i3
-exec awesome
+exec i3
+#exec awesome
