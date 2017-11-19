@@ -77,7 +77,7 @@
 
 14、pacman -Syu
 
-15、pacman -S  xorg-server xorg-xinit lightdm i3 lxterminal wqy-zenhei xf86-video-intel   mesa   gvfs gvfs-mtp  vim git zsh alsamixer volumeicon xorg-xrandr
+15、pacman -S  xorg-server xorg-xinit lightdm i3  wqy-zenhei xf86-video-显卡 tar  gvfs gvfs-mtp  vim git zsh volumeicon xorg-xrandr ttf-dejavu alsa-utils ctags 
 
 16、  useradd -m 新用户
       passwd 新用户
