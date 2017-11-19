@@ -24,7 +24,7 @@
 4、dhcpcd   
 
 5、pacstrap /mnt base base-devel
-也可以pacstrap /mnt bash coreutils file filesystem grub2 linux pacman procps-ng syslog-ng glibc systemd-sysvcompat shawd dhcpcd vi
+也可以pacstrap /mnt bash filesystem grub-bios linux pacman procps-ng syslog-ng glibc systemd-sysvcompat shawd dhcpcd vim sed(netctl dialog wpa_supplicant  无线)
 
 6、  genfstab -p /mnt >>/mnt/etc/fstab
 
@@ -83,7 +83,7 @@
       passwd 新用户
       usermod –a –G video,audio,lp,log,wheel,optical,scanner,games,users,storage,power 新用户
 
-17、 一些必备的软件 firefox firefox-i18n-zh-cn flashplugin pcmanfm pulseaudio-alsa gpicview wqy-microhei ttf-arphic-ukai ttf-arphic-uming file-roller unrar zip unzip p7zip  feh lxappearance  ntfs-3g fcitx termite  yaourt(/etc/pacman.conf [archlinuxcn] Server=http://repo.archlinuxcn.org/$arch)
+17、 一些必备的软件 firefox firefox-i18n-zh-cn flashplugin pcmanfm pulseaudio-alsa gpicview wqy-microhei ttf-arphic-ukai ttf-arphic-uming file-roller unrar zip unzip p7zip  feh lxappearance  ntfs-3g fcitx termite  
 
 18、  ttf-font-awesome ttf-font-icons (i3-gaps 状态栏显示图标）
 
